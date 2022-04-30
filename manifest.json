@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name":"MockData",
+    "version": "1.0",
+    "description": "Hsiaoyuan专用Mock数据插件",
+    "icons": {
+        "128": "src/img/logo.png",
+        "48": "src/img/logo.png",
+        "16": "src/img/logo.png"
+    },
+    "action": {
+        "default_icon": "src/img/logo.png",
+        "default_popup": "src/index.html"
+    },
+    "options_page": "src/option.html",
+    "background": {
+        "service_worker": "src/js/background.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [{
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "src/rules.json"
+        }]
+    },
+    "host_permissions": ["*://*/"],
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequestWithHostAccess"
+    ]
+}
