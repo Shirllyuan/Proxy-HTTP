@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name":"MockData",
     "version": "1.0",
-    "description": "Hsiaoyuan专用Mock数据插件",
+    "description": "Mock数据插件",
     "icons": {
         "128": "src/img/logo.png",
         "48": "src/img/logo.png",
